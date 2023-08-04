@@ -1,0 +1,228 @@
+/* nav */
+.nav-main {
+  padding: 1rem 5rem 0 5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-main .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-main .logo > img {
+  width: 50px;
+  height: 50px;
+}
+.nav-main .logo > a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+.nav-main .menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.875rem;
+}
+.nav-main .menu > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+}
+.nav-main .menu > ul > li {
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.nav-main .menu > ul > li:active {
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.nav-main .menu > ul > li:hover {
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.nav-main .menu > button {
+  display: flex;
+  padding: 0.375rem 1.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.375rem;
+  border: 1px solid #f6f215;
+  background-color: transparent;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.nav-main .menu > button:active {
+  border-radius: 0.375rem;
+  background: #f6f215;
+  color: #000;
+}
+.nav-main .menu > button:hover {
+  border-radius: 0.375rem;
+  background: #f6f215;
+  color: #000;
+}
+/* end nav */
+
+/* hero main */
+.hero-main {
+  background-color: #f6f215;
+  margin-top: 1rem;
+  height: auto;
+}
+.item-main {
+  padding: 2rem 5rem 0 5rem;
+  display: flex;
+}
+.item-main .text-main {
+  width: 50%;
+}
+.item-main .text-main > h1 {
+  color: #000;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.2rem;
+  margin: 0;
+  padding-top: 4rem;
+  padding-bottom: 2.5rem;
+}
+.item-main .text-main > button {
+  display: flex;
+  padding: 0.9375rem 1.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.375rem;
+  background: #000;
+  color: #fff;
+  border-color: transparent;
+  color: #fff;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+  cursor: pointer;
+}
+.item-main .text-main > button:active {
+  border-radius: 0.375rem;
+  border: 1px solid #000;
+  box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.55);
+  color: #000;
+  background-color: transparent;
+}
+.item-main .text-main > button:hover {
+  border-radius: 0.375rem;
+  border: 1px solid #000;
+  box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.55);
+  color: #000;
+  background-color: transparent;
+}
+.item-main .image-main {
+  width: 50%;
+}
+.item-main .image-main > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/* end hero main */
+
+/* Footer */
+.footer {
+  color: #fff;
+  padding: 3rem 5rem 3rem 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.footer > ul {
+  padding: 0;
+}
+.footer .active {
+  font-weight: 700;
+  cursor: pointer;
+}
+.footer .active:active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.footer .active:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.footer > ul > li {
+  list-style: none;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+/* End Footer */
+
+/* media query responsive */
+@media screen and (max-width: 500px) {
+  .nav-main {
+    padding: 1rem 1rem 0 1rem;
+    display: grid;
+    width: auto;
+  }
+  /* .nav-main .logo {
+    display: flex;
+    flex-direction: column;
+  } */
+  .nav-main .menu {
+    padding-top: 1rem;
+    display: grid;
+    justify-content: start;
+  }
+  .nav-main .menu > ul {
+    display: grid;
+  }
+  .hero-main {
+    width: auto;
+    height: auto;
+    padding: 2rem;
+  }
+  .hero-main .item-main {
+    display: flex;
+    padding: 0;
+    width: fit-content;
+  }
+  .hero-main .item-main .text-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-main .item-main .text-main > h1 {
+    font-size: 2rem;
+    line-height: normal;
+    text-align: center;
+    padding: 1rem;
+  }
+  .item-main .image-main {
+    display: block;
+    width: 0%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+}
+/* end media query responsive */
